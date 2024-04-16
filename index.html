@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="assets/img/dumbways.png" alt="Logo DumbWays">
+                    </a>
+                </li>
+                <li><a href="">Home</a></li>
+                <li><a href="">My Project</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <button>
+                        <a href="https://api.whatsapp.com/send/?phone=6285866447475&text&type=phone_number&app_absent=0"      target="_blank">Contact Me</a>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>ADD MY PROJECT</h1>
+
+    <form action="">
+        <div>
+            <label for="projectName">Project Name</label>
+            <input type="text" name="" id="projectName" required placeholder="Project Name">
+        </div>
+
+        <div class="date">
+            <div class="startdate">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" required>
+            </div>
+            <div class="enddate">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" required>
+            </div>
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <textarea name="" id="description" cols="30" rows="10" required></textarea>
+        </div>
+
+        <div>
+            <label for="technologies">Technologies</label>
+            <div>
+                <input class="checkbox" type="checkbox" id="nodeJs" value="Node Js" ><label for="nodeJs" class="labelcheckbox">Node Js</label>
+
+                <input class="checkbox kananatas" type="checkbox" value="Next Js" id="nextJs"><label for="nextJs" class="labelcheckbox">Next Js</label>
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" value="React Js" id="reactJs"><label for="reactJs" class="labelcheckbox">React Js</label>
+
+                <input class="checkbox kanan" type="checkbox" value="Type Script" id="typeScript"><label for="typeScript" class="labelcheckbox">TypeScript</label>
+            </div>
+        </div>
+        <div>
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" required>
+        </div>
+        <button type="input" onclick="addProject(event)" class="buttonsubmit">submit</button> 
+    </form>
+
+    <!-- list project -->
+
+    <div  class="containerBawah">
+
+        <div class="containerProject">
+        
+            <div class="judulUtama">
+                <h1>LIST PROJECT</h1>
+            </div>
+    
+            <div class="containerListProject"> 
+    
+                <div id="listProject" class="project">
+    
+                    <div class="foto">
+                        <img src="assets/img/foto1.jpg" alt="ini foto project">
+                    </div> 
+    
+                    <div class="judul">
+                        <h5>DumbWays Mobile App - 2021</h5>
+                        <p></p>
+                        <p>Durasi: 3 hari</p>
+                    </div>
+    
+                    <div class="deskripsi">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque, voluptas expedita autem vel eveniet.</p>
+                    </div>
+    
+                    <div class="icon">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+    
+                    <div class="button">
+                        <button>edit</button>
+                        <button>delete</button>
+                    </div>
+                </div>
+
+               
+    
+
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <script src="./assets/Javascript/script.js"></script>
+</body>
+</html>
