@@ -16,20 +16,31 @@
                         <img src="assets/img/dumbways.png" alt="Logo DumbWays">
                     </a>
                 </li>
-                <li><a href="">Home</a></li>
-                <li><a href="">My Project</a></li>
+                <li ><a href="" class="home">Home</a></li>
+                <li ><a href="" class="myProject">My Project</a></li>
             </ul>
         </div>
         <div class="nav-right">
             <ul>
                 <li>
-                    <button>
+                    <button class="firstButton">
                         <a href="https://api.whatsapp.com/send/?phone=6285866447475&text&type=phone_number&app_absent=0"      target="_blank">Contact Me</a>
+                    </button>
+                </li>
+                <li>
+                    <button class="secondButton" onclick="hamburgerButton()">
+                        <i class="fa-solid fa-bars" ></i>
                     </button>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div class="hamburgerButton hide">
+        <a href="">Home</a>
+        <a href="">My Project</a>
+        <a href=""><button>Contact Me</button></a>
+    </div>
 
     <h1>ADD MY PROJECT</h1>
 
@@ -52,7 +63,7 @@
 
         <div>
             <label for="description">Description</label>
-            <textarea name="" id="description" cols="30" rows="10" required></textarea>
+            <textarea name="" id="description" maxlength = "150" cols="30" rows="10" required></textarea>
         </div>
 
         <div>
@@ -72,18 +83,18 @@
             <label for="image">Upload Image</label>
             <input type="file" id="image" required>
         </div>
-        <button type="input" onclick="addProject(event)" class="buttonsubmit">submit</button> 
+        <div class="containerSubmit">
+            <button type="input" onclick="addProject(event)" class="buttonsubmit">submit</button> 
+        </div>
     </form>
 
     <!-- list project -->
 
     <div  class="containerBawah">
 
-        <div class="containerProject">
-        
-            <div class="judulUtama">
-                <h1>LIST PROJECT</h1>
-            </div>
+        <div class="judulUtama">
+            <h1>LIST PROJECT</h1>
+        </div>
     
             <div class="containerListProject" id="containerListProject"> 
     
@@ -97,7 +108,7 @@
                         <h5>DumbWays Mobile App - 2021</h5>
                         <p>test</p>
                         <br>
-                        <p>Durasi: 3 hari</p>
+                        <p >Durasi: 3 hari</p>
                     </div>
     
                     <div class="deskripsi">
@@ -145,13 +156,13 @@
                     </div>
                 </div>
 
+
                
     
 
-                <div class="clear"></div>
+                <!-- <div class="clear"></div> -->
 
             </div>
-        </div>
     </div>
 
     

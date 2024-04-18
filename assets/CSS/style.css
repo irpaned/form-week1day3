@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: rgb(227, 225, 231);
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
@@ -66,11 +66,11 @@ nav {
     border-radius: 5px;
     padding: 3px 15px;
     
-}
+} */
 
 /* FORM */
 
-form {
+/* form {
     width: 350px;
     height: 500px;
     margin: 25px auto;
@@ -131,14 +131,15 @@ textarea {
     border: none;
     margin-left: 283px;
     margin-top: 8px;
-}
+} */
 
 /* LIST PROJECT */
 
-.containerBawah {
+/* .containerBawah {
     background-color: white;
     width: 100%;
     height: 100%;
+    
 }
 
 body {
@@ -150,17 +151,26 @@ body {
     height: 100%;
     margin: auto;
     margin-top: 30px;
+    
+    
 }
 
 .containerProject h1 {
     text-align: center;
+    
 }
 
+
+
 .containerListProject {
-    width: 810px;
-    
+    display: flex;
+    flex-wrap: wrap;
+    width: 812px;
+    margin: auto;
     
 }
+
+
 
 
 
@@ -174,8 +184,14 @@ body {
     font-size: 10px;
 }
 
+.deskripsi {
+    margin: 10px 0;
+    height: 53px;
+}
+
 .deskripsi p {
     font-size: 11px;
+    margin: 0 0;
 }
 
 .project {
@@ -185,8 +201,9 @@ body {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
-    float: left;
+    height: 100%;
     margin-top: 23px;
+    
 }
 
 .foto {
@@ -228,6 +245,358 @@ body {
 
 .clear {
     clear: both;
-} 
+}  */
+
+ 
+body {
+    background-color: rgb(227, 225, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    height: 5000px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    background-color: rgb(248, 247, 255);
+    height: 70px;
+    
+}
+
+.nav-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.nav-left ul li {
+    margin: 0 15px;
+
+    
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+.nav-left img {
+    width: 55px;
+    height: 45px;
+    align-items: center;
+    
+}
+
+.nav-right ul {
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+    
+}
+
+.nav-right button {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 15px;
+    
+}
+
+.nav-right ul {
+    padding: 0;
+}
+
+.nav-right .secondButton {
+    background-color: rgb(248, 247, 255);
+    padding: 0 0 0 90px;
+}
+
+.nav-right i {
+    font-size: 20px;
+}
+
+.hamburgerButton {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    /* border: 2px solid black; */
+    background-color: rgb(192, 192, 192);
+}
+
+.hamburgerButton a {
+    margin: 5px auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    /* border: 2px solid black; */
+}
+
+.hamburgerButton button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.hide {
+    display: none;
+}
 
 
+
+
+/* FORM */
+
+form {
+    width: 400px;
+    height: 500px;
+    margin: 25px auto;
+}
+
+label, .buttonsubmit {
+    font-size: 18px;
+    
+}
+
+
+
+input, select, textarea {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
+    margin: 8px 0 20px 0;
+}
+
+.startdate {
+    width: 180px;
+
+}
+
+.enddate {
+    width: 180px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.checkbox {
+    width: 20px;
+    margin-right: 5px ;
+    margin-top: 15px;
+    
+}
+
+.kananatas { 
+    margin-left: 63px;
+
+}
+
+
+.kanan { 
+    margin-left: 60px;
+
+}
+
+.containerSubmit {
+    display: flex;
+    justify-content: end;
+}
+
+.buttonsubmit {
+    color: white;
+    background-color: black;
+    padding: 3px 15px;
+    border-radius: 20px;
+    border: none;
+    /* margin-left: 283px; */
+    margin-top: 8px;
+}
+
+/* LIST PROJECT */
+
+.containerBawah {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerProject {
+    width: 840px;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    
+    
+}
+
+.containerProject h1 {
+    text-align: center;
+    
+}
+
+
+
+.containerListProject {
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid black ; */
+    width: 812px;
+    margin: auto;
+    
+}
+
+
+
+
+
+.judulUtama {
+    padding-top: 15px;
+}
+
+.judul p {
+    color: rgb(94, 94, 94);
+    margin-top: -15px;
+    font-size: 10px;
+}
+
+.deskripsi {
+    /* border: 2px solid black; */
+    margin: 10px 0;
+    height: 53px;
+}
+
+.deskripsi p {
+    font-size: 11px;
+    margin: 0 0;
+}
+
+.project {
+    width: 230px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    margin-top: 23px;
+    
+}
+
+.foto {
+    width: 100%;
+    height: 140px;
+    
+}
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+
+}
+
+.icon i {
+    margin-right: 15px;
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+
+.button button {
+    width: 160px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+/* .clear {
+    clear: both;
+}  */
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 540px) {
+    .containerListProject {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .project {
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 435px) {
+    form {
+        width: 90%;
+    }
+
+    .startdate, .enddate {
+        width: 45%;
+    }
+
+    .firstButton {
+        display: none;
+    }
+
+    .home, .myProject {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 435px) {
+    .secondButton {
+        display: none;
+    }
+
+    .hamburgerButton {
+        display: none;
+    }
+}

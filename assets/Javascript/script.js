@@ -40,12 +40,12 @@ function addProject(event) {
 
     let differenceInDays = Math.floor(timeDifference / (1000 * 60 * 60 * 24)) 
     let differenceInMonths = Math.floor(differenceInDays / 30.44) 
-    let differenceInYears = Math.floor(differenceInMonths / 24) 
+    let differenceInYears = Math.floor(differenceInMonths / 12) 
 
     let duration;
 
     if(differenceInYears > 0) {
-        duration = `${differenceInMonths} years`
+        duration = `${differenceInYears} years`
     } else if (differenceInMonths > 0) {
         duration = `${differenceInMonths} months`
     } else if (differenceInDays > 0) {
@@ -81,10 +81,8 @@ function addProject(event) {
             const projectSaya = dataProject[i]
 
             document.getElementById("containerListProject").innerHTML +=`
-            <div class="containerListProject"> 
-    
+             
                 <div id="listProject" class="project">
-    
                     <div class="foto">
                         <img src="${projectSaya.image}" alt="ini foto project">
                     </div> 
@@ -93,7 +91,7 @@ function addProject(event) {
                         <h5>${projectSaya.projectName}</h5>
                         <p>${projectSaya.startDate} - ${projectSaya.endDate}</p>
                         <br>
-                        <p>${projectSaya.duration}</p>
+                        <p>Duration: ${projectSaya.duration}</p>
                     </div>
     
                     <div class="deskripsi">
@@ -111,11 +109,16 @@ function addProject(event) {
                         <button>delete</button>
                     </div>
                 </div>
-            </div>
+            
         `
         }
     }
 
+    function hamburgerButton () {
+        const hamburger = document.querySelector(".hamburgerButton")
+
+        hamburger.classList.toggle("hide")
+    }
 
 
 
